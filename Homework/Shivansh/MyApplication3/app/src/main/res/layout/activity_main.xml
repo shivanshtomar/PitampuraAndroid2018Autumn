@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    >
+    <EditText
+        android:id="@+id/input"
+
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/plus"
+        android:layout_marginTop="122dp"
+        android:inputType="number"
+        android:onClick="click" />
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/multiply"
+        android:layout_alignTop="@+id/input"
+        android:inputType="number"
+        android:onClick="click" />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANSWER"
+        android:textColor="@color/prpl"
+        android:layout_below="@id/input"
+        android:layout_centerInParent="true"
+        android:textSize="25dp"
+        android:layout_margin="10dp"
+        android:onClick="click"
+        android:id="@+id/txt"
+        />
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true"
+
+        android:layout_marginStart="40dp"
+
+        android:onClick="click"
+        android:text="+"
+        android:textSize="20sp"
+
+        />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="click"
+        android:text="-"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/minus"
+        android:layout_margin="20dp"
+        android:onClick="click"
+        android:text="*"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plus"
+        android:layout_marginLeft="40dp"
+        android:onClick="click"
+        android:text="/"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/mod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/minus"
+        android:layout_toRightOf="@+id/divide"
+        android:layout_marginLeft="20dp"
+        android:onClick="click"
+        android:text="%"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/sqrt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/multiply"
+        android:layout_below="@+id/plus"
+        android:onClick="click"
+        android:text="Sqrt"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divide"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:onClick="click"
+        android:text="ENTER"
+        android:textSize="20sp"
+        />
+
+</RelativeLayout>
